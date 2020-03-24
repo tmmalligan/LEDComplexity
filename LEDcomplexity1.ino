@@ -1,4 +1,4 @@
-/*
+//*
  * Week 5: LED Complexity
  * By Taylor Malligan
  */
@@ -29,26 +29,15 @@
   sensorValue = constrain(sensorValue, 1300, 3700);
 //  int brightness = map(sensorValue, 0, 40, 0 ,255);
 
-  if (sensorValue > 1300 && sensorValue <3500){
+ if (sensorValue > 1300 && sensorValue <3500){
     digitalWrite(ExternalLED, HIGH);
     delay(200);
-    digitalWrite(InteralLED,LOW);
+   /// digitalWrite(InteralLED,LOW);
     delay(200);
     }
-  }
-  else {
+else {
     digitalWrite(ExternalLED, LOW);
     digitalWrite(InternalLED,HIGH);
   }
+ }   
    
-  
-  
-  
-//    if(buttonState == 0) {
-//      digitalWrite(ExternalLED, HIGH); 
-//    }
-//    else {
-//      digitalWrite(ExternalLED, LOW); 
-//    }
-//   
-//  }
